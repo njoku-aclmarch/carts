@@ -1,6 +1,6 @@
 ---
-apiVersion: extensions/v1beta1
-kind: Deployment
+apiVersion: v1
+kind: Namespace
 metadata:
   name: lab-dev
 ---
@@ -8,7 +8,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: carts
-  namespace: dev
+  namespace: lab-dev
 spec:
   replicas: 1
   template:
@@ -62,7 +62,7 @@ metadata:
   name: carts
   labels:
     app: carts
-  namespace: dev
+  namespace: lab-dev
 spec:
   ports:
   - name: http
