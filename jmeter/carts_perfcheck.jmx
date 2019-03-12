@@ -102,7 +102,7 @@ String headerValue = &quot;LSN=&quot;+ LSN + &quot;;TSN=&quot; + TSN + &quot;;LT
 HeaderManager hm = sampler.getHeaderManager();
 hm.removeHeaderNamed(&quot;x-dynatrace-test&quot;);
 hm.add(new org.apache.jmeter.protocol.http.control.Header(&quot;x-dynatrace-test&quot;, headerValue));
-// added dynatrace headers
+// added dynatrace headers today
  
           </stringProp>
         </BeanShellPreProcessor>
