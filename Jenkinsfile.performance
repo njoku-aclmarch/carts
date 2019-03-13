@@ -52,7 +52,7 @@ pipeline {
 
         perfSigDynatraceReports(
           envId: 'Dynatrace Tenant', 
-          nonFunctionalFailure: 1, 
+          nonFunctionalFailure: 2, 
           specFile: "monspec/${env.APP_NAME}_perfsig.json"
         ) 
       }
